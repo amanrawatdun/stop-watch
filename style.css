@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f4f6; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    width: 95%;
+    height: auto;
+    padding: 40px;
+    border-radius: 15px;
+    background:  #3280aa; 
+    box-shadow: 5px 5px 15px rgba(19, 18, 18, 0.15), -5px -5px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.display-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display-box > div {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    padding: 0 16px;
+}
+
+button {
+    background: linear-gradient(145deg, #ff6f20, #d25c1b);
+    padding: 10px 24px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #d25c1b, #b64e15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+@media (max-width:360px) {
+    button{
+        padding: 10px 16px;
+    }
+}
